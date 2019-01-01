@@ -7,9 +7,10 @@ pages:
   - rm -rf public
   - npm install
   - ng build --prod --aot
-  - mv dist/FortuneTelling/ public/
+  - mv dist/ public/
   artifacts:
     paths:
     - public
   only:
   - master
+  
