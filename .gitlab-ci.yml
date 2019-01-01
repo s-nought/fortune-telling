@@ -7,7 +7,7 @@ pages:
   - rm -rf public
   - mkdir -p public
   - npm install
-  - ng build --prod --aot --base-href=/
+  - ng build --prod --aot
   - mv -f dist/* public/
   artifacts:
     paths:
