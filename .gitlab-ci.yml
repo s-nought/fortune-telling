@@ -6,7 +6,7 @@ pages:
   - rm -rf dist
   - rm -rf public
   - npm install
-  - ng build --prod --aot
+  - ng build --prod=true --aot --deployUrl=https://ohkumaneko.gitlab.io/fortune-telling
   - mv dist/ public/
   artifacts:
     paths:
