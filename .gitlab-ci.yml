@@ -5,9 +5,10 @@ pages:
   - rm -rf node_modules
   - rm -rf dist
   - rm -rf public
+  - mkdir -p public
   - npm install
-  - ng build --prod=true --aot --deployUrl=https://ohkumaneko.gitlab.io/fortune-telling
-  - mv dist/ public/
+  - ng build --prod --aot --base-href=/fortune-telling/
+  - mv -f dist/ public/
   artifacts:
     paths:
     - public
