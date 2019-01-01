@@ -7,7 +7,7 @@ pages:
   - rm -rf public
   - mkdir -p public
   - npm install
-  - ng build --prod --aot
+  - ng build --prod --aot --base-href=/fortune-telling/
   - mv -f dist/* public/
   artifacts:
     paths:
