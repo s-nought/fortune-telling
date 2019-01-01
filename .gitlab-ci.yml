@@ -9,6 +9,7 @@ pages:
   - npm install
   - ng build --prod --aot --base-href=/fortune-telling/
   - mv -f dist/ public/
+  - pwd
   - ls -la
   - ls -la public/
   artifacts:
