@@ -18,7 +18,7 @@ import { AppComponent } from './app.component';
   providers: [
     {
       provide: APP_BASE_HREF,
-      useValue: '/'
+      useValue: '/fortune-telling'
     }
   ],
   bootstrap: [AppComponent]

@@ -19,7 +19,7 @@ export class AppComponent implements DoCheck, OnInit {
   ng_flg: boolean = false;
 
   ngOnInit() {
-    if (localStorage.length == 3) {
+    if (!this.yyyy || !this.mm || !this.dd) {
       this.yyyy = Number(localStorage.getItem("y"));
       this.mm = Number(localStorage.getItem("m"));
       this.dd = Number(localStorage.getItem("d"));
