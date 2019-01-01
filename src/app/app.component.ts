@@ -19,7 +19,7 @@ export class AppComponent implements DoCheck, OnInit {
   ng_flg: boolean = false;
 
   ngOnInit() {
-    if (!this.yyyy || !this.mm || !this.dd) {
+    if (localStorage.getItem("click_flg") == "on") {
       this.yyyy = Number(localStorage.getItem("y"));
       this.mm = Number(localStorage.getItem("m"));
       this.dd = Number(localStorage.getItem("d"));
@@ -99,6 +99,7 @@ export class AppComponent implements DoCheck, OnInit {
     try {
       this.nullCheck(y, m, d);
 
+      localStorage.setItem("click_flg", "on");
       localStorage.setItem("y", y.toString());
       localStorage.setItem("m", m.toString());
       localStorage.setItem("d", d.toString());
