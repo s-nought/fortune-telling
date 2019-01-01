@@ -1,0 +1,15 @@
+pages:
+  image: pivotalpa/angular-cli
+  stage: deploy
+  script:
+  - rm -rf node_modules
+  - rm -rf dist
+  - rm -rf public
+  - npm install
+  - ng build --prod --aot
+  - mv dist/FortuneTelling/* public/
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
