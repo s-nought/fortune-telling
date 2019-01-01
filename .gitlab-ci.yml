@@ -7,11 +7,8 @@ pages:
   - rm -rf public
   - mkdir -p public
   - npm install
-  - ng build --prod --aot --base-href=/fortune-telling/
+  - ng build --prod --aot --base-href=/
   - mv -f dist/* public/
-  - pwd
-  - ls -la
-  - ls -la public/
   artifacts:
     paths:
     - public
