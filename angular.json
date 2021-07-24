@@ -33,6 +33,8 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/fortune-telling",
+              "deployUrl": "/fortune-telling/",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
