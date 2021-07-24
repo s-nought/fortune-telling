@@ -29,7 +29,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/fortune-telling",
+              "baseHref": "/fortune-telling/",
               "deployUrl": "/fortune-telling/",
               "fileReplacements": [
                 {
